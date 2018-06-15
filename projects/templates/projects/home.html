@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<section class="hero is-primary has-text-centered is-medium">
+{% load staticfiles %}
+<section class="hero is-link has-text-centered is-medium">
   <div class="hero-body">
     <div class="container">
       <h1 class="title is-2">Welcome to CruzPort</h1>
@@ -12,11 +13,11 @@
 <section class="section">
   <div class="container">
     <div class="field has-text-centered">
-      <img style="border-radius:50%" alt="Picture of Alexis Cruz, Creator of CruzPort" src=""/>
+      <img style="border-radius:50%" alt="Picture of Alexis Cruz, Creator of CruzPort" src="{% static 'linkedin.jpeg' %}"/>
       <br/>
       <br/>
       <h2 class="subtitle">Alexis Cruz</h2>
-      <a class="button is-primary" href="">Resum&eacute; &nbsp;<i class="far fa-file-pdf"></i></a>
+      <a class="button is-primary" href="{% static 'Alexis_Cruz_Resume.pdf' %}">Resum&eacute; &nbsp;<i class="far fa-file-pdf"></i></a>
       <a class="button is-info" href="mailto:mr.alexiscruz@gmail.com">Email&nbsp;<i class="fas fa-envelope"></i></a>
     </div><!-- End of field -->
   </div><!-- End of container -->
@@ -46,8 +47,9 @@
 <section class="section has-text-centered">
   <h2 class="title">About this website</h2>
   <div class="content">
-    <p>This is my frist project using Bulma, a CSS framework and Django a Python web developement framework.
-      Both framework's concepts are easy to follow and really make it easy for the developer to get projects started and running
+    <p>This is my frist project using Bulma, a Responsive CSS framework and Django a Python web developement framework.
+      Both framework's concepts are easy to follow and really make it easy for the developer to get projects started and running.
+      This website is still in development, the more i learn the more features get added to this website.
     </p>
   </div>
 </section>

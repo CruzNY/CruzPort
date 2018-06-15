@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load staticfiles %}
+<section class="hero is-link has-text-centered is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-2">Welcome to CruzPort</h1>
+      <h2 class="subtitle is-4">My personal portfolio powered by <a href="http://Bulma.io">Bulma</a> and <a href="http://djangoproject.com">Django</a></h2>
+    </div><!-- end of container -->
+  </div><!-- end of hero body -->
+</section><!-- end of hero section -->
+<section class="section">
+  <div class="container">
+    <div class="field has-text-centered">
+      <img style="border-radius:50%" alt="Picture of Alexis Cruz, Creator of CruzPort" src="{% static 'linkedin.jpeg' %}"/>
+      <br/>
+      <br/>
+      <h2 class="subtitle">Alexis Cruz</h2>
+      <a class="button is-primary" href="{% static 'Alexis_Cruz_Resume.pdf' %}">Resum&eacute; &nbsp;<i class="far fa-file-pdf"></i></a>
+      <a class="button is-info" href="mailto:mr.alexiscruz@gmail.com">Email&nbsp;<i class="fas fa-envelope"></i></a>
+    </div><!-- End of field -->
+  </div><!-- End of container -->
+</section><!-- End of section -->
+<section class="section has-text-centered">
+  <h2 class="title">About Me</h2>
+  <h3 class="subtitle">How I came about, my interests and goals.</h3>
+  <div class="content">
+    <p class="has-text-centered">My name is Alexis Cruz and I am currently a senior at the New York City College of Technology
+      majoring in Computer Systems. I've been using a computer since I was 6, but in recent years I've
+      become a power user and it has become an extension of me.I didn't start off in CS, I was
+      originally electrical engineering until one summer in Mexico, my cousin who was entering college
+      showed me mechatronics and I fell in love the programming aspect. A lot of the conpects such as
+      classes, inheritence and overloading/overriding came naturally to me since my thought process
+      worked in a similar way. After that vacation I decided to persue Computer Systems.
+      My school's software development track revolves around Java, so that is my primary language.
+      I like writing applications and working with databases. Away from school I like
+      solving problems on HackerRank or LeetCode and writting automated data entry scripts with
+      Python, but also building websites such as this one.
+
+      My future goals is to one day move out to Silicon Valley and work at one of many big tech
+      companies there. Possibly one day even work or have my very own startup. I'm still young
+      so for the foreseable future I want to work with dedicated and passionate people that
+      build together into soemthing great!</p>
+  </div>
+</section>
+<section class="section has-text-centered">
+  <h2 class="title">About this website</h2>
+  <div class="content">
+    <p>This is my frist project using Bulma, a Responsive CSS framework and Django a Python web developement framework.
+      Both framework's concepts are easy to follow and really make it easy for the developer to get projects started and running.
+      This website is still in development, the more i learn the more features get added to this website.
+    </p>
+  </div>
+</section>
+{% endblock %}
+

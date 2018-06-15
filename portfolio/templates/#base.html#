@@ -11,7 +11,6 @@
   <body>
     <nav class="navbar is-link">
       <div class="container">
-	<p></p>
 	<div class="navbar-brand">
 	  <a class="navbar-item" href="/">CruzPort</a>
 	  <div id="navbarBurger" class="navbar-burger burger" data-target="navMenu">

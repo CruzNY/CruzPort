@@ -5,13 +5,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     
-    <title>Document</title>
+    <title>{% block title %}{% endblock %} </title>
   </head>
   
   <body>
     <nav class="navbar is-link">
       <div class="container">
-	<p></p>
 	<div class="navbar-brand">
 	  <a class="navbar-item" href="/">CruzPort</a>
 	  <div id="navbarBurger" class="navbar-burger burger" data-target="navMenu">

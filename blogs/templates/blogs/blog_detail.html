@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="section">
+  <div class="container">
+    <h1 class="title"> {{ details.title }}</h1>
+    <p> {{ details.submission_date }}</p>
+    <div class="content">
+      <br/>
+      <figure class="image">
+	<img alt="" src="{{ details.image.url }}"/>
+      </figure>
+      <p>{{ details.full_body }}</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

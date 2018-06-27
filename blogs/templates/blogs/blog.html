@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="section">
+  <div class="container">
+    <h1 class="title">Blogs</h1>
+    <h2 class="subtitle">This is my blog section, Find updates here.EPA</h2>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="content has-text-centered">
+      <table class="table">
+	<thead>
+	  <tr>
+            <th>No</th>
+            <th>Title</th>
+            <th>Published</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  {% for blog in blogs.all %}
+	  <tr>
+	    <td>{{ forloop.counter }}</td>
+	    <td><a href="{% url 'blog_detail' blog.id %}">{{ blog.title }}</a></td>
+	    <td>{{ blog.submission_date }}</td>
+	  </tr>
+	  {% endfor %}
+	</tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,8 @@
+from django.contrib import admin
+from django.urls import path, include
+from . import views
+urlpatterns = [
+    path('', views.blog_home, name='blog'), #blog page
+    path('<int:blog_id>/', views.detail, name='blog_detail'), #Individual blogs
+] 
+

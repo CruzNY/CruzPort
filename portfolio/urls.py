@@ -20,6 +20,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls), #Admin Page
-    path('', views.home,  name='home'), # Home Page, what is loaded when you type CruzPort.com
-    path('projects/',include('projects.urls')) # Directing to the urls.py in projects app
+    path('', views.home, name='home'), # Home Page, what is loaded when you type CruzPort.com
+    path('projects/',include('projects.urls')), # Directing to the urls.py in projects app
+    path('blogs/',include('blogs.urls')), # Directing this to the urls.py in blogs app
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

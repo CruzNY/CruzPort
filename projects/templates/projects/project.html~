@@ -1,1 +1,26 @@
 {% extends 'base.html' %}
+{% block title %}CruzPort | Projects {% endblock %}
+{% block content %}
+{% load staticfiles %}
+<div class="section">
+  <div class="container">
+    <h1 class="title is-1">Projects</h1>
+    <p>These are various projects that I've done in school as assignments, test questions or my own independent
+      ones. You can find more detailed information about each one by clicking the image or title</p>
+    <p style="color:red;">Source code blocks coming soon!</p>
+    <br/>
+  </div>
+  <div class="container">
+
+    {% for project in projects.all %}
+    <h2 class="title">{{ project.title }}</h1>
+<h3 class="subtitile">{{ project.submission_date }}</h3>
+<p> {{ project.summary }}</p>
+<br/>
+<figure class="image">
+  <a href="{% url 'detail' project.id %}"><img alt="" src=" {{ project.image.url }}"/></a>
+</figure>
+{% endfor %}
+</div>
+</div>
+{% endblock %}

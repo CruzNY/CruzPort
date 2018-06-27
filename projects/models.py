@@ -9,4 +9,3 @@ class project(models.Model):
     image = models.ImageField(upload_to='images/')
     summary = models.CharField(max_length=100)
     full_body = models.TextField()
-    

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-dnohz68u8hzfkxortjwvjxusgo9wqnrnx2sqg0tfsghavtvlrw3tvkxwzh58n9jp" crossorigin="anonymous">
+
+    <title>{% block title %}{% endblock %} </title>
+  </head>
+
+  <body>
+    <nav class="navbar is-link ">
+      <div class="container">
+	<div class="navbar-brand">
+	  <a class="navbar-item" href="/">cruzport</a>
+	  <div id="navbarburger" class="navbar-burger burger" data-target="navmenu">
+	    <span></span>
+	    <span></span>
+	    <span></span>
+	  </div><!-- end of navbar-burger -->
+	</div><!-- end of navbar-brand -->
+	<div id="navmenu" class="navbar-menu has-text-centered">
+	  <div class="navbar-start">
+	    <a class="navbar-item" href="/">home &nbsp; <i class="fas fa-home"></i></a>
+	    <a class="navbar-item" href="{% url 'project' %}">projects &nbsp; <i class="fas fa-project-diagram"></i></a>
+	    <a class="navbar-item" href="{% url 'blog' %}">blog &nbsp; <i class="far fa-newspaper"></i></a>
+	  </div>
+	  <div class="navbar-end">
+	    <a class="navbar-item" href="http://github.com/cruzny"><span class="is-hidden-desktop">github</span>&nbsp; <i class="fab fa-github"></i></a>
+	    <a class="navbar-item" href="https://www.linkedin.com/in/alexis-cruz-nycct/"><span class="is-hidden-desktop">linkedin </span>&nbsp;<i class="fab fa-linkedin"></i></a>
+	  </div><!-- end of navbar-end -->
+	</div><!-- end of navbar-menu -->
+      </div><!-- end of container -->
+    </nav><!-- end of nav -->
+    <section class="section">
+      <div class="container is-primary has-text-centered">
+	  <div class="tile is-ancestor">
+	      <div class="is-parent is-vertical is-3">
+		  <div class="card">
+		      <div class="card-header">
+			  <div class="card-header-title is-centered">
+			      <h1 class="title is-4">meliodas</h1>
+			  </div>
+		      </div>
+		      <div class="card-image">
+			  <figure class="image">
+			      <img alt="" src="/users/alexiscruz/downloads/tenor.gif"/>
+			  </figure>
+		      </div>
+		      <div class="card-content">
+			  <p><strong>Name:fjkdsjfkldjfklfjdlkfjlfjfkl</strong></p>
+			  <p>moreer</p>
+			  <p>dfsdjfds</p>
+		      </div>
+		  </div>
+	      </div>
+	      <div class="tile is-parent box">
+		  <div class="content">
+		      contrary to popular belief, lorem ipsum is not simply random text. it has roots in a piece of classical latin literature from 45 bc, making it over 2000 years old. richard mcclintock, a latin professor at hampden-sydney college in virginia, looked up one of the more obscure latin words, consectetur, from a lorem ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. lorem ipsum comes from sections 1.10.32 and 1.10.33 of "de finibus bonorum et malorum" (the extremes of good and evil) by cicero, written in 45 bc. this book is a treatise on the theory of ethics, very popular during the renaissance. the first line of lorem ipsum, "lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+		      the standard chunk of lorem ipsum used since the 1500s is reproduced below for those interested. sections 1.10.32 and 1.10.33 from "de finibus bonorum et malorum" by cicero are also reproduced in their exact original form, accompanied by english versions from the 1914 translation by h. rackham.</label>
+		  </div>
+	      </div>
+	  </div>
+      </div>
+      </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+	<div class="content has-text-centered">
+	  <p><strong>cruzport</strong> website created by alexis cruz</p>
+	  <p>powered by <a href="http://bulma.io">bulma</a> and <a href="http://djangoproject.com">django</a>
+	  </p>
+	</div><!-- end of content -->
+      </div><!-- end of container -->
+    </footer><!-- end of footer -->
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function () {
+
+      // Get all "navbar-burger" elements
+      var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+      // Get the target from the "data-target" attribute
+      var target = $el.dataset.target;
+      var $target = document.getElementById(target);
+
+      // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+      $el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+      });
+      });
+      }
+
+      });
+    </script>
+  </body>
+</html>

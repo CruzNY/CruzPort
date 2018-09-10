@@ -79,8 +79,8 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'cruzport',
-        'USER':'postgres',
+        'NAME':'cruzportdb',
+        'USER':'cruzportadmin',
         'PASSWORD':'Spikesin1786',
         'HOST':'localhost',
         'PORT': '5432',
